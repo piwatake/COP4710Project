@@ -63,8 +63,8 @@ include("connect.php");?>
           <div class="sidebar_item"> 
             <h2>Latest Events</h2> 
             <?php 
-                    $sqlQuery = "SELECT * FROM event ORDER BY EventID DESC"; 
-                    $sqlResult = mysqli_query($GLOBALS["___mysqli_ston"], $sqlQuery); 
+                    $sqlQuery = "SELECT * FROM Event ORDER BY EventID DESC"; 
+                    $sqlResult = mysqli_query($connection, $sqlQuery); 
                     $sqlNum = mysqli_num_rows($sqlResult); 
                     $count = 0; 
 

@@ -44,7 +44,7 @@
                                             ORDER BY EventID DESC;"; 
                     } 
             } 
-                    $sqlResult = mysqli_query($GLOBALS["___mysqli_ston"], $sqlQuery); 
+                    $sqlResult = mysqli_query($connection, $sqlQuery); 
                     $sqlNum = mysqli_num_rows($sqlResult); 
                     $count = 0; 
 
@@ -87,7 +87,7 @@
                              
                         $sqlcomms = "SELECT commentcontent FROM Comment as c, Event as e 
                                             WHERE c.Event_EventID = e.EventID AND e.EventName = '$name';"; 
-                        $sqlcommsres = mysqli_query($GLOBALS["___mysqli_ston"], $sqlcomms); 
+                        $sqlcommsres = mysqli_query($connection, $sqlcomms); 
                         $sqlNum4 = mysqli_num_rows($sqlcommsres); 
                         //echo $sqlNum4; 
                         $count4 = 0; 
@@ -146,7 +146,7 @@
                                             ORDER BY EventID DESC;"; 
                     } 
             } 
-                    $sqlResult = mysqli_query($GLOBALS["___mysqli_ston"], $sqlQuery); 
+                    $sqlResult = mysqli_query($connection, $sqlQuery); 
                     $sqlNum = mysqli_num_rows($sqlResult); 
                     $count = 0; 
 
@@ -181,7 +181,7 @@
                              
                         $sqlcomms = "SELECT commentcontent FROM Comment as c, Event as e 
                                             WHERE c.Event_EventID = e.EventID AND e.EventName = '$name';"; 
-                        $sqlcommsres = mysqli_query($GLOBALS["___mysqli_ston"], $sqlcomms); 
+                        $sqlcommsres = mysqli_query($connection, $sqlcomms); 
                         $sqlNum4 = mysqli_num_rows($sqlcommsres); 
                         //echo $sqlNum4; 
                         $count4 = 0; 
@@ -243,7 +243,7 @@
                     $sqlQuery = "SELECT * FROM Event as e, Admin as a, Student as s, University as u 
                                         WHERE e.Admin_AdminID = a.AdminID AND a.Student_StudentID = s.StudentID AND s.University_UniversityID = u.UniversityID AND u.Name = 'Valencia College' 
                                         ORDER BY EventID DESC;"; 
-                    $sqlResult = mysqli_query($GLOBALS["___mysqli_ston"], $sqlQuery); 
+                    $sqlResult = mysqli_query($connection, $sqlQuery); 
                     $sqlNum = mysqli_num_rows($sqlResult); 
                     $count = 0; 
 
@@ -281,7 +281,7 @@
                              
                         $sqlcomms = "SELECT commentcontent FROM Comment as c, Event as e 
                                             WHERE c.Event_EventID = e.EventID AND e.EventName = '$name';"; 
-                        $sqlcommsres = mysqli_query($GLOBALS["___mysqli_ston"], $sqlcomms); 
+                        $sqlcommsres = mysqli_query($connection, $sqlcomms); 
                         $sqlNum4 = mysqli_num_rows($sqlcommsres); 
                         //echo $sqlNum4; 
                         $count4 = 0; 

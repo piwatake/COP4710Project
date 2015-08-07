@@ -9,7 +9,7 @@
         $loc = $_POST['loc']; 
         $desc = $_POST['desc']; 
 
-        $query = "INSERT INTO university (Name, Location, Description) VALUES ('$name', '$loc', '$desc')"; 
+        $query = "INSERT INTO University (Name, Location, Description) VALUES ('$name', '$loc', '$desc')"; 
         $result = mysqli_query($GLOBALS["___mysqli_ston"], $query); 
          
         if ($result) 

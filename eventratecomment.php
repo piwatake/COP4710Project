@@ -37,7 +37,7 @@
                             <option value="5">5</option> 
                         </select></p> 
                     <p><label>What RSO are you a member of? </label><select type = "text" id="rso" name="rso">'; 
-                            $sqlQuery = "SELECT * FROM rso 
+                            $sqlQuery = "SELECT * FROM RSO 
                                                 ORDER BY rsoname ASC;"; 
                             $sqlResult = mysqli_query($GLOBALS["___mysqli_ston"], $sqlQuery); 
                             $sqlNum = mysqli_num_rows($sqlResult); 

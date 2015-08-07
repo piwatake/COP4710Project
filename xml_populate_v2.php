@@ -54,7 +54,7 @@ foreach ($xml-> event as $row)
      
      
     // performing sql query 
-    $sql1 = "INSERT IGNORE INTO location (Name, Building)" 
+    $sql1 = "INSERT IGNORE INTO Location (Name, Building)" 
             .    "VALUES('$Location', '$building_no')"; 
 
     $result1 = mysqli_query($GLOBALS["___mysqli_ston"], $sql1); 

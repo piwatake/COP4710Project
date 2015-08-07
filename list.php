@@ -10,7 +10,7 @@
                     <?php 
                     $sqlQuery = "SELECT * FROM University 
                                         ORDER BY UniversityID DESC;"; 
-                    $sqlResult = mysqli_query($GLOBALS["___mysqli_ston"], $sqlQuery); 
+                    $sqlResult = mysqli_query($connection, $sqlQuery); 
                     $sqlNum = mysqli_num_rows($sqlResult); 
                     $count = 0; 
                      
@@ -27,9 +27,9 @@
                 <h2>RSOs</h2> 
                 <p> 
                         <?php 
-                        $sqlQuery = "SELECT * FROM rso 
+                        $sqlQuery = "SELECT * FROM RSO 
                                             ORDER BY rsoname ASC;"; 
-                        $sqlResult = mysqli_query($GLOBALS["___mysqli_ston"], $sqlQuery); 
+                        $sqlResult = mysqli_query($connection, $sqlQuery); 
                         $sqlNum = mysqli_num_rows($sqlResult); 
                         $count = 0; 
                          
